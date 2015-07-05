@@ -1,0 +1,232 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg" >
+
+    <RelativeLayout
+        android:id="@+id/mainHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/header" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/home"
+            android:onClick="goToMenu" />
+    </RelativeLayout>
+
+    <ScrollView
+        style="@style/goodList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mainHeader" >
+
+        <RelativeLayout
+            android:id="@+id/resolutionLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/treeIdText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:padding="10dip"
+                android:text="Select Image Resolution:(recommended resolution is 600 x 400)"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/resolutionRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/treeIdText" >
+            </RadioGroup>
+        </RelativeLayout>
+    </ScrollView>
+
+    <android.view.SurfaceView
+        android:id="@+id/preview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mainHeader"
+        android:visibility="invisible" >
+    </android.view.SurfaceView>
+
+    <TextView
+        android:id="@+id/currentMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mainHeader"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/treeIdText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/currentMode"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/treeCountText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/currentMode"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <include
+        android:id="@+id/mainLoadingInclude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        layout="@layout/loading_camera" />
+
+    <ImageView
+        android:id="@+id/dummytagImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mainLoadingInclude"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/tag_image"
+        android:visibility="invisible" />
+
+    <RelativeLayout
+        android:id="@+id/takePictureLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#40000000"
+        android:visibility="invisible" >
+
+        <ImageView
+            android:id="@+id/capturePhoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/ic_menu_camera"
+            android:onClick="doCapturePhoto" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/userdetailsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mainHeader"
+        android:layout_marginBottom="5dip"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="5dip"
+        android:visibility="gone" >
+
+        <ScrollView
+            style="@style/goodList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/detailsTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginBottom="10dip"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_marginTop="12dip"
+                    android:text="Enter Details"
+                    android:textColor="#3a8300"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:id="@+id/detailsfirstLine"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dip"
+                    android:layout_below="@id/detailsTextView"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="5dip"
+                    android:background="@android:drawable/divider_horizontal_textfield" />
+
+                <TextView
+                    android:id="@+id/detailsUsername"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/detailsfirstLine"
+                    android:layout_marginLeft="8dip"
+                    android:layout_marginTop="20dip"
+                    android:text="User ID"
+                    android:textColor="#3a8300"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/detailstextUsername"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/detailsUsername"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="5dip"
+                    android:inputType="text|number"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/detailsLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/detailstextUsername"
+                    android:layout_marginLeft="8dip"
+                    android:layout_marginTop="20dip"
+                    android:text="Location ID"
+                    android:textColor="#3a8300"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/detailstextLocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/detailsLocation"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="5dip"
+                    android:inputType="text|number"
+                    android:singleLine="true" />
+
+                <Button
+                    android:id="@+id/loginButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/detailstextLocation"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginTop="5dip"
+                    android:background="@drawable/redbutton"
+                    android:onClick="doInitiateOfflineCamera"
+                    android:text="Submit"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</RelativeLayout>

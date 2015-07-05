@@ -1,0 +1,131 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg" >
+
+    <RelativeLayout
+        android:id="@+id/mainHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/header" />
+
+        <ImageView
+            android:id="@+id/censusHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/home"
+            android:onClick="goToMenu" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:layout_toLeftOf="@id/censusHome"
+            android:background="@android:drawable/ic_menu_upload"
+            android:onClick="doUploadReport" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/resolutionScrollLayout"
+        style="@style/goodList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mainHeader" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/forestName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                android:text="Forest Name"
+                android:textColor="@color/StTheme"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/forestTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/forestName"
+                android:layout_margin="5dip"
+                android:hint="Enter Forest Name"
+                android:inputType="textCapCharacters" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/treeIdText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/forestTxt"
+                android:layout_centerHorizontal="true"
+                android:padding="10dip"
+                android:text="Select Image Resolution:(recommended resolution is 600 x 400)"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/resolutionRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/treeIdText" >
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/startSessionBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/resolutionRadio"
+                android:layout_margin="5dip"
+                android:background="@drawable/redbutton"
+                android:text="Start Session"
+                android:textColor="@color/white_color"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <android.view.SurfaceView
+        android:id="@+id/preview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mainHeader"
+        android:visibility="invisible" >
+    </android.view.SurfaceView>
+
+    <include
+        android:id="@+id/mainLoadingInclude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        layout="@layout/loading_camera" />
+
+    <RelativeLayout
+        android:id="@+id/takePictureLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#40000000"
+        android:visibility="invisible" >
+
+        <ImageView
+            android:id="@+id/capturePhoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/ic_menu_camera"
+            android:onClick="doCapturePhoto" />
+    </RelativeLayout>
+
+</RelativeLayout>

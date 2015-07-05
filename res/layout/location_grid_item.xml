@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/grid_selector" >
+
+    <TextView
+        android:id="@+id/locTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/StTheme"
+        android:textStyle="bold" />
+
+    <ViewFlipper
+        android:id="@+id/siteFlipper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/locTitle"
+        android:layout_marginBottom="2dip"
+        android:layout_marginLeft="2dip"
+        android:layout_marginRight="2dip"
+        android:layout_marginTop="2dip" >
+    </ViewFlipper>
+
+    <TextView
+        android:id="@+id/locDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/siteFlipper"
+        android:layout_centerHorizontal="true"
+        android:textSize="12sp"
+        android:textColor="@color/gray_color" />
+
+</RelativeLayout>

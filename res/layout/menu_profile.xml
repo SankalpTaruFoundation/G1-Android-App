@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white_color" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/llMenuClick"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10.0dip"
+                android:text="Menu"
+                android:textColor="@color/black_color"
+                android:textSize="@dimen/text_size_large" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:fadingEdge="none"
+            android:orientation="vertical"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:background="@color/black_light" />
+
+                <LinearLayout
+                    android:id="@+id/llprofile"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/cell_bottom"
+                    android:layout_marginTop="@dimen/cell_top"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/cell_padding" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_marginRight="10.0dip"
+                        android:background="@drawable/ic_menu_profile"
+                        android:contentDescription="@string/app_name" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="Refer A Friend"
+                        android:textColor="@color/black_color"
+                        android:textSize="@dimen/text_size_large"
+                        android:textStyle="normal" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:background="@color/black_light" />
+
+                <LinearLayout
+                    android:id="@+id/llfavorites"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/cell_bottom"
+                    android:layout_marginTop="@dimen/cell_top"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/cell_padding" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_marginRight="10.0dip"
+                        android:background="@drawable/ic_menu_favbig"
+                        android:contentDescription="@string/app_name" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="Zodiac Tree Plantation"
+                        android:textColor="@color/black_color"
+                        android:textSize="@dimen/text_size_large"
+                        android:textStyle="normal" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:background="@color/black_light" />
+
+                <LinearLayout
+                    android:id="@+id/llfeedback"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/cell_bottom"
+                    android:layout_marginTop="@dimen/cell_top"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/cell_padding" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_marginRight="10.0dip"
+                        android:background="@drawable/ic_menu_feedback"
+                        android:contentDescription="@string/app_name" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="Feedback"
+                        android:textColor="@color/black_color"
+                        android:textSize="@dimen/text_size_large"
+                        android:textStyle="normal" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:background="@color/black_light" />
+
+                <LinearLayout
+                    android:id="@+id/llfares"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/cell_bottom"
+                    android:layout_marginTop="@dimen/cell_top"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/cell_padding" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_marginRight="10.0dip"
+                        android:background="@drawable/ic_menu_fare"
+                        android:contentDescription="@string/app_name" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="Fares"
+                        android:textColor="@color/black_color"
+                        android:textSize="@dimen/text_size_large"
+                        android:textStyle="normal" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:background="@color/black_light" />
+
+                <LinearLayout
+                    android:id="@+id/lllogout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/cell_bottom"
+                    android:layout_marginTop="@dimen/cell_top"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/cell_padding" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_marginRight="10.0dip"
+                        android:background="@drawable/ic_menu_logout"
+                        android:contentDescription="@string/app_name" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="Logout"
+                        android:textColor="@color/black_color"
+                        android:textSize="@dimen/text_size_large"
+                        android:textStyle="normal" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:background="@color/black_light" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvRegisterWithAnother"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5.0dip"
+        android:layout_marginRight="5.0dip"
+        android:contentDescription="@string/app_name"
+        android:padding="5.0dip"
+        android:singleLine="true"
+        android:text="@string/version"
+        android:textColor="@color/StTheme"
+        android:textSize="@dimen/dialog_btn_textsize"
+        android:visibility="visible" />
+
+</RelativeLayout>

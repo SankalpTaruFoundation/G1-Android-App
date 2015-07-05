@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/directionHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/header" />
+
+    <TextView
+        android:id="@+id/censusUpldConfTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/directionHeader"
+        android:layout_margin="5dip"
+        android:text="Enter email addresses \n( for more than one email add , between emails)"
+        android:textColor="@color/StTheme"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/census_report_reciepient"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/censusUpldConfTxt"
+        android:layout_margin="5dip"
+        android:hint="Add receipients email" />
+
+    <Button
+        android:id="@+id/cancelCensusBtn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dip"
+        android:background="@drawable/redbutton"
+        android:text="Cancel"
+        android:textColor="@color/white_color"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/uploadCensusBtn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/cancelCensusBtn"
+        android:layout_margin="5dip"
+        android:background="@drawable/greenbutton"
+        android:text="Send Census"
+        android:textColor="@color/white_color"
+        android:textStyle="bold" />
+
+</RelativeLayout>

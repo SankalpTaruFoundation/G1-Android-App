@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg" >
+
+    <ImageView
+        android:id="@+id/dialogHeader"
+        android:layout_width="match_parent"
+        android:layout_height="60px"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/header" />
+
+    <ProgressBar
+        android:id="@+id/loginprogress"
+        style="@android:style/Widget.ProgressBar.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminateDrawable="@drawable/progress_image"
+        android:visibility="invisible" />
+
+    <RelativeLayout
+        android:id="@+id/treeIDComponentLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" >
+
+        <TextView
+            android:id="@+id/treeIDDialogLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dip"
+            android:text="ENTER TREE ID: "
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/treeIDEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/treeIDDialogLabel"
+            android:hint="Tree Id"
+            android:maxLength="5"
+            android:inputType="number|text"
+            android:singleLine="true" />
+
+        <Button
+            android:id="@+id/submitTreeId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/treeIDEditText"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/redbutton"
+            android:text="Submit"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/resetTreeId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/treeIDEditText"
+            android:layout_centerHorizontal="true"
+            android:layout_toRightOf="@id/submitTreeId"
+            android:background="@drawable/redbutton"
+            android:text="Reset"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/cancelTreeDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/close" />
+
+</RelativeLayout>

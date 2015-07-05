@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <org.sankalptaru.www.framework.widget.MultiDirectionSlidingDrawer
+        xmlns:my="http://schemas.android.com/apk/res/org.sankalptaru.www.framework"
+        android:id="@+id/drawer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        my:content="@+id/content"
+        my:direction="bottomToTop"
+        my:handle="@+id/handle" >
+
+        <include
+            android:id="@id/content"
+            layout="@layout/menu_profile" />
+
+        <ImageView
+            android:id="@id/handle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/iv_menu_strip" />
+    </org.sankalptaru.www.framework.widget.MultiDirectionSlidingDrawer>
+
+</RelativeLayout>

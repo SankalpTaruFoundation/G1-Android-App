@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="version">© SankalpTaru Foundation v 2.3</string>
+     <string name="skip"><u><i>Skip</i></u></string>
+    <string name="carbonCalculator">Green Quotient</string>
+    <string name="app_name">SankalpTaru-G1</string>
+    <string name="action_settings">Settings</string>
+    <string name="dialogText"> Login with any of the following :</string>
+    <string name="locationIdDialogText">Select location :</string>
+    <string name="sponsorsDialogText">Select Sponsor :</string>
+    <string name="color">#000000</string>
+    <string name="username">Username  </string>
+    <string name="password">Password  </string>
+    <string name="loginText"> Login </string>
+    <string name="locations"> Location ID </string>
+    <string name="wishlist"> Your Wish to Plant </string>
+    <string name="name"> Display Name </string>
+    <string name="ecode"> Ecode </string>
+    <string name="plantText"> Start Planting </string>
+    <string name="radioOneText"> Celebrate Earth Day </string>
+    <string name="radioTwoText"> Gift or Wish Someone </string>
+    <string name="radioThreeText"> Offset my Carbon Footprint </string>
+    <string name="radioFourText"> Never Mind, I have my own reasons to plant </string>
+    <string name="reasonTitleText"> Select a reason to plant </string>
+    <string name="contniue"> Start Planting Now ! </string>
+    <string name="ecodeTop"> If you already have an ECode, </string>
+    <string name="ecodeTopBelow"> Click the below button to start Planting: </string>
+    <string name="enterEcodeText"> Enter Ecode and Start Planting! </string>
+    <string name="ecodeTopBottom"> If you want to buy an ECode, </string>
+    <string name="ecodeTopBottomBelow"> Click the below button: </string>
+    <string name="enterEcodeTextBottom"> Purchase an ECode </string>
+    <string name="selectSiteText"> Select Site </string>
+    <string name="enterEcode"> Enter ECode </string>
+    <string name="ecodeHint"> Enter Ecode... </string>
+    <string name="ecodeDescription"> \tEnter an Ecode\n and Start Planting! </string>
+    <string name="buttonTextEcode"> Continue </string>
+    <string name="get_started">To get started, log in using Facebook</string>
+    <string name="staticText">Trees Planted and Counting...</string>
+    <string name="registerDisclaimer">Please reset password with an email address.\n\nWhen you click reset password, a confirmation email will be sent with instructions on how to reset your password.</string>
+    <string name="update">Updates</string>
+    <string name="carbonCalculatordisclaimer">\tAt SankalpTaru, we dont just plant.\n\nWe wanted to provide a simple way to help you determine how you were impacting Mother Nature. Green Quotient is our measure of your impact as well as gauge your drive for green initiatives. Your Green quotient will depend on the following factors:
+\n\n\t. Carbon footprint due to travel
+\n\n\t. Carbon footprint due to residential power
+\n\n\t. Awareness of environmentally friendly practices
+\n\n\t. Usage of environmentally friendly devices
+\n\n\t. Within a few minutes, you can find out your Green Quotient.</string>
+    <string name="downloadSitesDisclaimer">\t To see the plantation sites offered by SankalpTaru one time data that needs to be downloaded.\n\n\n\t Please be patient till the download process is complete..!!\n\n</string>
+    <string name="zodiacDisclaimer">\t\nEver wondered if you could become spiritual by just planting a tree? If planting a tree could be the answer to your problems? If it could give you peace of mind and serenity?
+\n\n
+\t We are constantly inspired by our motto ‘WE DON’T JUST PLANT’, and always try to bring to you new reasons that would motivate you to plant with us. This is why we present to you our unique and novel concept of ZODIAC TREES. With this new feature, you can choose a tree from our especially evaluated and assessed ZODIAC TREE CHART, and plant it on the site of your preference. Haven’t we made the most far-fetched and impossible things possible, that too by just a few clicks of the mouse.
+\n\n
+\tCome, connect with your spiritual side… let fortune knock on your door, just by planting trees!
+\n
+\t\tSelect your Zodiac to plant</string>
+
+    <string-array name="visibilityOptions">
+        <item>Everyone</item>
+        <item>Private</item>
+        <item>Custom visibility</item>
+    </string-array>
+    <string-array name="ocassionOptions">
+        <item>Everyone</item>
+        <item>Private</item>
+        <item>Earth Day</item>
+        <item>Birthday</item>
+        <item>Anniversary</item>
+        <item>Mothers Day</item>
+        <item>Secret</item>
+    </string-array>
+
+</resources>

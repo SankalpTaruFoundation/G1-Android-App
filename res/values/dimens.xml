@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dialog_btn_textsize">14.0sp</dimen>
+    <dimen name="text_size_btn">16.0sp</dimen>
+    <dimen name="btn_top_value">10.0dip</dimen>
+    
+    <dimen name="padding_small">8.0dip</dimen>
+    <dimen name="padding_medium">8.0dip</dimen>
+    <dimen name="padding_large">16.0dip</dimen>
+    <dimen name="text_size_edit">15.0sp</dimen>
+    <dimen name="text_size_large">24.0sp</dimen>
+    <dimen name="text_size_medium_large">20.0sp</dimen>
+    <dimen name="text_size_22">22.0sp</dimen>
+    <dimen name="text_size_extra_extra_large">34.0sp</dimen>
+    <dimen name="text_size_extra_medium_large">32.0sp</dimen>
+    <dimen name="text_size_extra_large">30.0sp</dimen>
+    <dimen name="text_size_cal_date">18.0sp</dimen>
+    <dimen name="text_size_medium">14.0sp</dimen>
+    <dimen name="text_size_small">12.0sp</dimen>
+    <dimen name="text_size_very_small">10.0sp</dimen>
+    <dimen name="text_size_median_small">11.0sp</dimen>
+    <dimen name="text_size_btn">16.0sp</dimen>
+    <dimen name="date_size">18.0sp</dimen>
+    <dimen name="FeedBack_size">16.0sp</dimen>
+    <dimen name="text_book_again">16.0sp</dimen>
+    <dimen name="no_empty_size">16.0sp</dimen>
+    <dimen name="cal_size">12.0sp</dimen>
+    <dimen name="text_14">14.0sp</dimen>
+    <dimen name="text_15">15.0sp</dimen>
+    <dimen name="text_18">18.0sp</dimen>
+    <dimen name="text_size_big">20.0sp</dimen>
+    <dimen name="text_size_time">24.0sp</dimen>
+    <dimen name="text_xxx_large">40.0sp</dimen>
+    <dimen name="text_mini">9.0sp</dimen>
+    <dimen name="ice_alert_margin_top">30.0dip</dimen>
+    <dimen name="carousel_height">200.0dip</dimen>
+    <dimen name="carousel_top_margin">-40.0dip</dimen>
+    <dimen name="carousel_margin">0.0dip</dimen>
+    <dimen name="viewflow_text_city">12.0sp</dimen>
+    <dimen name="viewflow_text_avail">13.0sp</dimen>
+    <dimen name="dialog_btn_textsize">14.0sp</dimen>
+    
+</resources>

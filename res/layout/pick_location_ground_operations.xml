@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/dialogHeader"
+        android:layout_width="match_parent"
+        android:layout_height="60px"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/header" />
+
+    <TextView
+        android:id="@+id/dialogText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dialogHeader"
+        android:layout_centerHorizontal="true"
+        android:background="#2E2E2E"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        android:typeface="sans" />
+
+    <ListView
+        android:id="@+id/locationIdlist"
+        style="@style/goodList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dialogText"
+        android:divider="@color/dividerColor"
+        android:dividerHeight="2dip" >
+    </ListView>
+
+    <ImageView
+        android:id="@+id/cancelTreeDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/close" />
+
+</RelativeLayout>
